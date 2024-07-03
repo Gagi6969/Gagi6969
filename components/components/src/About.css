@@ -1,0 +1,266 @@
+.header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #010314;
+  width: 100%;
+}
+
+.firstp {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.right-container .firstbtn,
+.right-container .secondbtn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logoabout {
+  position: absolute;
+  margin-top: -93px;
+  width: 190px;
+  height: 250px;
+  top: 195px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  opacity: 1;
+  z-index: 2;
+}
+
+.rectangle {
+  position: absolute;
+  width: 1245px;
+  height: 1016px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  border: 3px solid rgb(0, 23, 85);
+  z-index: 1;
+  margin-top: 208px;
+  background-color: #030418;
+  box-shadow: 0px 4px 100px 0px #ff00ea;
+  padding: 20px;
+}
+
+.rectangletitle {
+  margin-top: 13%;
+  font-size: 34px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 51px;
+  text-align: center;
+}
+
+.editprofile {
+  margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 16px 40px;
+  border-radius: 16px;
+  border: 3px solid #7241FF;
+  box-shadow: 0px 0px 10px 0px #7744FF;
+  background-color: #000000;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.iconab {
+  margin-left: 276px;
+  margin-top: 40px;
+}
+
+.iconabb {
+  margin-left: 85px;
+}
+
+.iconabbb {
+  margin-left: 56px;
+}
+
+.frameab {
+  margin-left: 95px;
+  margin-top: 39px;
+}
+
+.MyPortfolios {
+  width: 208px;
+  height: 41px;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40.8px;
+  text-align: center;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+.cardforab {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.lastbarab {
+  margin-left: -7%;
+  margin-top: 115px;
+  width: 1359px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .rectangle {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: none;
+    border: none;
+  }
+
+  .rectangletitle {
+    font-size: 24px;
+    margin-top: 10%;
+  }
+  
+  .editprofile {
+    margin-left: auto;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+  }
+
+  .iconab,
+  .iconabb,
+  .iconabbb,
+  .frameab {
+    margin-left: 0;
+    margin-top: 20px;
+    display: block;
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .MyPortfolios {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+
+  .cardforab {
+    margin: 10px auto;
+    width: 90%;
+    display: block;
+  }
+
+  .lastbarab {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .logoabout {
+    padding-top: 39px;
+    position: relative;
+    margin-top: 20px;
+    width: 80px; /* Adjust size */
+    height: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .followers-likes-views {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .followers,
+  .likes,
+  .views {
+    font-size: 16px; /* Adjust size */
+    margin: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .rectangle {
+    box-shadow: none;
+  }
+
+  .editprofile {
+    width: 30px;
+    height: 20px;
+    margin-top: 29px;
+    color: white;
+    background-color: white;
+  }
+}
+
+.cardaforab{
+  margin-left: 100px;
+}
+
+
+@media (max-width: 795px) {
+  .editprofile{
+    display: none;
+  }
+  }

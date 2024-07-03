@@ -1,0 +1,307 @@
+.header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #010314;
+  width: 100%;
+}
+
+.firstp {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.right-container .firstbtn,
+.right-container .secondbtn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.communitytitle {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 120px;
+}
+
+.picforslide {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.slide-group {
+  display: flex;
+  gap: 20px; /* Расстояние между изображениями внутри группы */
+}
+
+.slide-group img {
+  width: 570px; /* уменьшаем ширину */
+  height: auto; /* автоматически вычисляем высоту, чтобы сохранить пропорции */
+  object-fit: cover; /* Обрезать изображение по размерам контейнера */
+  border-radius: 10px; /* Добавить скругления углов */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Добавить тень */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .right-container .firstbtn,
+  .right-container .secondbtn {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+ 
+  .picforslide {
+    margin-left: 0;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .slide-group {
+    flex-direction: column;
+  }
+
+  .slide-group img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .custom-menu-icon {
+    color: white;
+  }
+
+  .slidecontainer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: auto; /* Push the slidecontainer to the bottom */
+  }
+
+  .portfoliosslide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between header and slidecontainer */
+    height: 100vh; /* Ensure full height of viewport */
+  }
+
+  .content {
+    padding-bottom: 60px; /* Ensure space for the slidecontainer at the bottom */
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 10px; /* Reduce gap for mobile */
+  }
+
+  .allportfolios {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+}
+
+/* Additional media queries for custom-menu-icon color */
+@media (max-width: 550px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 460px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 400px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 350px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+@media (max-width: 891px) {
+  .header{
+    height: 71px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slidecontainer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: auto; /* Push the slidecontainer to the bottom */
+  }
+
+  .portfoliosslide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between header and slidecontainer */
+    height: 100vh; /* Ensure full height of viewport */
+  }
+
+  .content {
+    padding-bottom: 60px; /* Ensure space for the slidecontainer at the bottom */
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 10px; /* Reduce gap for mobile */
+  }
+
+  .allportfolios {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+}
+
+/* Additional media queries for custom-menu-icon color */
+@media (max-width: 550px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 460px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 400px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 350px) {
+  .custom-menu-icon {
+    color: white;
+  }
+}
+@media (max-width: 769px) {
+  .firstbtn , .secondbtn {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .firstbtn , .secondbtn {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .firstbtn , .secondbtn {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .firstbtn , .secondbtn {
+    display: none;
+  }
+}
+
+
+@media (max-width: 602px) {
+  .firstbtn , .secondbtn {
+    display: none;
+  }
+}
+
+@media (max-width: 552px) {
+  .communitytitle {
+font-size: 50px;
+color: white;
+  
+  }
+} 
+@media (max-width: 452px) {
+  .communitytitle {
+font-size: 50px;
+color: white;
+  
+  }
+} 
+@media (max-width: 352px) {
+  .communitytitle {
+font-size: 50px;
+color: white;
+  
+  }
+} 
+
+
